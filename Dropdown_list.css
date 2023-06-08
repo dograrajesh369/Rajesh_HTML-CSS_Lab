@@ -1,0 +1,57 @@
+/*Giving height and margin to web page body*/
+body{
+  height: auto;
+  margin: 0%;
+}
+/*Allining the header of page*/
+header{
+  text-align: center;
+  background-color: rgb(236, 121, 121);
+  margin: 0%;
+  padding: 10px;
+}
+/*navigate used for aling position and index size of the drop down link*/
+#navigate{
+  position:sticky;
+  z-index: 1;
+  top: 2%;
+}
+.menu{
+  margin: 0%;
+  background-color: rgb(0, 255, 162);
+}
+.menu li a{
+  color: crimson;
+  font-size: 20px;
+  text-decoration:none;
+}
+.menu li{
+  display:inline-block;
+  padding: 10px;
+}
+.menu li:hover{
+  background-color:cornflowerblue;
+}
+.menu li:nth-child(2):hover #droplist_1,.menu li:nth-child(3):hover #droplist_2{
+  display:block;
+}
+#droplist_1,#droplist_2{
+  position:absolute;
+  width: auto;
+  max-width: 150px;
+  display:none;
+  top: 42px;
+  background-color: whitesmoke;
+  padding: 0%;
+}
+#droplist_1 li,#droplist_2 li{
+  display: block;
+}
+#droplist_1 li:hover,#droplist_2 li:hover{
+  background-color: gainsboro;
+}
+#droplist_1 li a ,#droplist_2 li a{
+  color: steelblue;
+  font-size: 16px;
+}
+

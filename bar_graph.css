@@ -1,0 +1,62 @@
+body{
+    height: 0%;
+}
+/*Set bar graph position*/ 
+#Bar_Graph{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+/* Using Bar_graph article for align all bar graph in one line */
+#Bar_Graph article{
+    display:inline-block;
+}
+/*Using #Bar_Graph p for giving space between each border line of bar*/
+#Bar_Graph p{
+    padding: 20px;
+}
+/*#Bar_Graph div is used for arranging the height , margin and background of the bar lines and bars*/
+#Bar_Graph div{
+    height: 350px;
+    margin: 15px;
+    background-color: rgb(183, 128, 235);
+}
+/*#Bar_Graph #Bar_1,#Bar_2,#Bar_3  and there respective @keyframes used for animate the portfolio of bar plot 
+as its blank area background, filed area background and also most important its durantion and iteration count  */
+#Bar_Graph #Bar_1{
+    width: 100%;
+    height: 70%;
+    background-color: aqua;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-name: barplot1;
+}
+@keyframes barplot1{
+    0%{background-color: rgb(165, 42, 157);height: 100%;}
+    100%{background-color: burlywood;height: 60%;}
+}
+#Bar_Graph #Bar_2{
+    width: 100%;
+    height: 60%;
+    background-color: aqua;
+    animation-name: barplot2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes barplot2{
+    0%{height: 100%; background-color: rgb(165, 42, 157);}
+    100%{height: 60%; background-color: burlywood;}
+    }
+#Bar_Graph #Bar_3{
+    width: 100%;
+    height: 20%;
+    background-color: aqua;
+    animation-name: barplot3;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes barplot3{
+    0%{height: 100%; background-color: rgb(165, 42, 157);}
+    100%{height: 60%; background-color: burlywood;}
+}
